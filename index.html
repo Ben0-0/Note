@@ -1,9 +1,8 @@
-Notes From Previous Lesson:
-
-1. What is the internet -> Inter: Among | Net: Network -> Internet ->
-2. What is a domain -> Domain: Tên miền = "địa chỉ nhà" của web. Thời chưa có Domain thì để access vô web nào thì phải gõ IP của nó ra. VD: 113.161.(...) -> www.thpt-lehongphong-tphcm.edu.vn (.vn ở đây gọi là TLD: Top Level Domain. Có nhiều loại như .com, .us, .uk,...) (.edu ở đây gọi là SLD: Second Level Domain, cũng giống TLD những nằm ở dưới) (.thpt-lehongphong-tphcm là Third Level Domain) (www là subdomain, không lúc nào cũng là www, VD như: "meet" là subdomain trong meet.google.com)
-3. URL vs domain
-4. 
+Notes From Previous Lesson:\\
+1. What is the internet -> Inter: Among | Net: Network -> Internet ->\\
+2. What is a domain -> Domain: Tên miền = "địa chỉ nhà" của web. Thời chưa có Domain thì để access vô web nào thì phải gõ IP của nó ra. VD: 113.161.(...) -> www.thpt-lehongphong-tphcm.edu.vn (.vn ở đây gọi là TLD: Top Level Domain. Có nhiều loại như .com, .us, .uk,...) (.edu ở đây gọi là SLD: Second Level Domain, cũng giống TLD những nằm ở dưới) (.thpt-lehongphong-tphcm là Third Level Domain) (www là subdomain, không lúc nào cũng là www, VD như: "meet" là subdomain trong meet.google.com)\\
+3. URL vs domain\\
+4. \\
 
 Note:
 Switch là cục để cắm máy tính vô để chuyển đổi mạng 
@@ -30,7 +29,7 @@ Layer 7: Physical (Dây nhợi ngoài đời) (Đáy của Internet)
 
 Ethernet 
 
->DNS : Domain Name Server
+>DNS: Domain Name Server
 
 VD: nhập www.thpt-lehongphong-tphcm.edu.vn và search. Khi này Browser sẽ "hỏi" cache có ip nào tương ứng với domain đó ko. Hỏi không có-> hỏi hệ điều hành -> biết thì nhả ip -> ko biết thì hỏi cái server là DNS resolver hay DNS server. thg này có nhiệm vụ là khi thg OS nhả cho nó cái string domain rồi cái thg resolver đi kiểm tra cái cache của nó -> có thì nhả ip cho OS r OS nhả lại cho browser. không có thì thg DNS sẽ đi hỏi thg ISP (Internet Service Provider)-> Có thì nhả về cho DNS Resolver -> ko có thì ISP tìm cache -> ko có thì nó đi hỏi TLD server của nó (ở đây là .vn), để làm thế thì nó sẽ đi đem cái .vn cho thằng Root Name Server xong nó trả lại cho mình cái địa chỉ IP của thg TLD server, mình đưa lại cái này cho thằng TLD tuy thg TLD ko biết cái domain đó là gì nhưng biết ai (server nào) là người giữ nó xong nó cho mình cái địa chỉ của thg authoritative name server (là thg giữ hết tất cả mọi thông tin lên quan đến cái domain đó), thg ANS này sẽ đưa cho nhà mạng (ISP) cái IP của Domain cần tìm rồi từ đó, ISP sẽ trả lại cho DNS Resolver/Server (và bỏ vô cache luôn để sau này đỡ tìm), sau đó DNS Resolver/Server trả về OS (và bỏ vô cache luôn), sau đó OS trả về browser (và bỏ vô cache luôn) rồi browser cx bỏ vô cache của nó.
 
