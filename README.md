@@ -55,4 +55,4 @@ Ngta: 10h20
 TCP: Mình gửi tính hiệu SYN(Synchronize) đến Server, xong nó gửi SYN-ACK(Synchronize-Acknowledge) để mình biết nó nhận rồi, rồi mình gửi lại ACK cho nó để nó biết đã thiết lập kết nối 2 chiều, giờ m muốn gửi data qua lại gì thì cứ thoải mái.
 Sau TCP thì mình sẽ bắt đầu gửi cái string yêu cầu gì đó, sau đó server sẽ gửi lại cái string có cái answer.	
 
-HTTPS > HTTP vì HTTPS: HyperText Transfer Protocol Secure. Vì HTTP gửi plain text nên ko secure, một bên third party sú sú có thể nhảy vô đọc và lấy một bản copy để lấy thông tin nên ko secure. Còn HTTPS thì sẽ có một cái bước là TLS (Transport Layer Secure) để encrypt cái plain text đó và cái này chỉ có bên nhận và bên gửi biết cách decrypt, bên ngoài CÓ THỂ try to decrypt nma REALLY lâu nên nuh uh
+HTTPS > HTTP vì HTTPS: HyperText Transfer Protocol Secure. Vì HTTP gửi plain text nên ko secure, một bên third party sú sú có thể nhảy vô đọc và lấy một bản copy để lấy thông tin nên ko secure. Còn HTTPS thì sẽ có một cái bước là TLS (Transport Layer Secure) để encrypt cái plain text đó và cái này chỉ có bên nhận và bên gửi biết cách decrypt, bên ngoài CÓ THỂ try to decrypt nma REALLY lâu nên nuh uh.
